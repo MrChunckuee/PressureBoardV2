@@ -26,7 +26,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 4300 1850 50  0001 C CIN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ASDX:ASDXACX030PAAA5 U1
+L PressureBoard2-rescue:ASDXACX030PAAA5-ASDX U1
 U 1 1 5C9C80E7
 P 2100 4550
 F 0 "U1" H 2125 4615 50  0000 C CNN
@@ -42,17 +42,6 @@ F 8 "DIP-8" H 2650 4450 50  0001 C CNN "IPC7351"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Jack-DC J1
-U 1 1 5C9C8299
-P 1200 1300
-F 0 "J1" H 1255 1625 50  0000 C CNN
-F 1 "Jack-DC" H 1255 1534 50  0000 C CNN
-F 2 "" H 1250 1260 50  0001 C CNN
-F 3 "~" H 1250 1260 50  0001 C CNN
-	1    1200 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 5C9C8396
 P 3350 1300
@@ -64,46 +53,22 @@ F 3 "~" H 3350 1300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_POT_TRIM RV1
-U 1 1 5C9C8507
+L Device:R_POT_TRIM RV2
+U 1 1 5C9C8599
 P 3700 1850
-F 0 "RV1" H 3630 1896 50  0000 R CNN
+F 0 "RV2" H 3630 1896 50  0000 R CNN
 F 1 "10K" H 3630 1805 50  0000 R CNN
 F 2 "" H 3700 1850 50  0001 C CNN
 F 3 "~" H 3700 1850 50  0001 C CNN
 	1    3700 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_POT_TRIM RV2
-U 1 1 5C9C8599
-P 3700 2300
-F 0 "RV2" H 3630 2346 50  0000 R CNN
-F 1 "10K" H 3630 2255 50  0000 R CNN
-F 2 "" H 3700 2300 50  0001 C CNN
-F 3 "~" H 3700 2300 50  0001 C CNN
-	1    3700 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 1300 3700 1300
-Wire Wire Line
-	3700 1300 3700 1700
-Wire Wire Line
-	3500 1300 3700 1300
-Connection ~ 3700 1300
-Wire Wire Line
-	4200 1850 4050 1850
 Wire Wire Line
 	4300 1300 4300 1750
-Wire Wire Line
-	3700 2150 3700 2000
 Wire Wire Line
 	4300 1950 4300 2600
 Wire Wire Line
 	4300 2600 4000 2600
-Wire Wire Line
-	3700 2600 3700 2450
 Wire Wire Line
 	4300 1300 4700 1300
 Connection ~ 4300 1300
@@ -156,19 +121,6 @@ $EndComp
 Connection ~ 4000 2600
 Wire Wire Line
 	4000 2600 3700 2600
-Wire Wire Line
-	4000 2600 4000 2700
-$Comp
-L power:GNDA #PWR04
-U 1 1 5C9C96AC
-P 2700 5250
-F 0 "#PWR04" H 2700 5000 50  0001 C CNN
-F 1 "GNDA" H 2705 5077 50  0000 C CNN
-F 2 "" H 2700 5250 50  0001 C CNN
-F 3 "" H 2700 5250 50  0001 C CNN
-	1    2700 5250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 5C9C9D8F
@@ -221,8 +173,6 @@ $EndComp
 Wire Wire Line
 	2550 5050 2700 5050
 Wire Wire Line
-	2700 5250 2700 5050
-Wire Wire Line
 	2650 4300 2650 4200
 Wire Wire Line
 	3350 4300 3350 4200
@@ -230,31 +180,6 @@ Wire Wire Line
 	2550 4750 3050 4750
 Wire Wire Line
 	3050 3900 3050 4750
-Wire Wire Line
-	3850 2300 4050 2300
-Wire Wire Line
-	4050 2300 4050 1850
-Connection ~ 4050 1850
-Wire Wire Line
-	4050 1850 3850 1850
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5C9CC1E8
-P 4700 2550
-F 0 "#FLG0101" H 4700 2625 50  0001 C CNN
-F 1 "PWR_FLAG" H 4700 2724 50  0000 C CNN
-F 2 "" H 4700 2550 50  0001 C CNN
-F 3 "~" H 4700 2550 50  0001 C CNN
-	1    4700 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 2700 4700 2700
-Wire Wire Line
-	4700 2700 4700 2550
-Connection ~ 4000 2700
-Wire Wire Line
-	4000 2700 4000 2750
 Wire Wire Line
 	3050 3900 3350 3900
 Wire Wire Line
@@ -278,53 +203,20 @@ Wire Wire Line
 	5100 1300 5100 1100
 Connection ~ 4700 1300
 $Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5C9CDA24
-P 3050 5250
-F 0 "#FLG0103" H 3050 5325 50  0001 C CNN
-F 1 "PWR_FLAG" H 3050 5423 50  0000 C CNN
-F 2 "" H 3050 5250 50  0001 C CNN
-F 3 "~" H 3050 5250 50  0001 C CNN
-	1    3050 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2700 5050 3050 5050
-Wire Wire Line
-	3050 5050 3050 5250
-Connection ~ 2700 5050
-$Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5C9CE6EF
-P 3400 4900
-F 0 "J2" H 3373 4873 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 3373 4782 50  0000 R CNN
-F 2 "" H 3400 4900 50  0001 C CNN
-F 3 "~" H 3400 4900 50  0001 C CNN
-	1    3400 4900
+P 5300 4750
+F 0 "J2" H 5273 4723 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5273 4632 50  0000 R CNN
+F 2 "" H 5300 4750 50  0001 C CNN
+F 3 "~" H 5300 4750 50  0001 C CNN
+	1    5300 4750
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 4900 3200 4900
-Wire Wire Line
-	3200 5000 3050 5000
-Wire Wire Line
-	3050 5000 3050 5050
-Connection ~ 3050 5050
-Text Label 2600 4900 0    50   ~ 0
-Vout(ToTivaADC)
-Text Label 2600 5050 0    50   ~ 0
+Text Label 5000 5300 1    50   ~ 0
 GND(ToTiva)
 Wire Notes Line
-	1350 3400 4400 3400
-Wire Notes Line
-	4400 3400 4400 5750
-Wire Notes Line
-	4400 5750 1350 5750
-Wire Notes Line
 	1350 5750 1350 3400
-Wire Wire Line
-	1500 1400 1750 1400
 Wire Wire Line
 	1750 1400 1750 1550
 $Comp
@@ -338,8 +230,6 @@ F 3 "C:/Users/mafe7/Documents/KiCad/MyLibrary/data_sheet/TL2230OA_datasheet.pdf"
 	2    2350 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1500 1200 2000 1200
 Connection ~ 2000 1200
 Wire Wire Line
 	2000 1200 2150 1200
@@ -383,8 +273,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 1850 3000 2100
 Wire Wire Line
-	3000 2450 3000 2300
-Wire Wire Line
 	2000 1750 2150 1750
 Wire Wire Line
 	2000 1200 2000 1750
@@ -405,4 +293,183 @@ Text Notes 1750 750  0    50   ~ 0
 Fuente de Poder a partir del jack DC.
 Wire Wire Line
 	3200 1300 2550 1300
+$Comp
+L SparkFun-Connectors:POWER_JACK J1
+U 1 1 5CA927BA
+P 1150 1300
+F 0 "J1" H 1106 1690 45  0000 C CNN
+F 1 "POWER_JACK" H 1106 1606 45  0000 C CNN
+F 2 "POWER_JACK_PTH" H 1150 1550 20  0001 C CNN
+F 3 "" H 1150 1300 50  0001 C CNN
+F 4 "CONN-08197" H 1106 1511 60  0000 C CNN "Field4"
+	1    1150 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1200 2000 1200
+Wire Wire Line
+	1350 1300 1500 1300
+Wire Wire Line
+	1500 1300 1500 1400
+Wire Wire Line
+	1350 1400 1500 1400
+Connection ~ 1500 1400
+$Comp
+L Device:C C3
+U 1 1 5CA975BC
+P 4250 4750
+F 0 "C3" H 4365 4796 50  0000 L CNN
+F 1 "470u" H 4365 4705 50  0000 L CNN
+F 2 "" H 4288 4600 50  0001 C CNN
+F 3 "~" H 4250 4750 50  0001 C CNN
+	1    4250 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1300 3700 1300
+Wire Wire Line
+	3700 1700 3700 1300
+Connection ~ 3700 1300
+Wire Wire Line
+	3700 1300 4300 1300
+Wire Wire Line
+	3700 2000 3700 2600
+Wire Wire Line
+	3850 1850 4200 1850
+$Comp
+L Device:R R4
+U 1 1 5CA9B431
+P 4650 4650
+F 0 "R4" V 4443 4650 50  0000 C CNN
+F 1 "10K" V 4534 4650 50  0000 C CNN
+F 2 "" V 4580 4650 50  0001 C CNN
+F 3 "~" H 4650 4650 50  0001 C CNN
+	1    4650 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CA9BFB7
+P 3850 4300
+F 0 "R2" V 3643 4300 50  0000 C CNN
+F 1 "10K" V 3734 4300 50  0000 C CNN
+F 2 "" V 3780 4300 50  0001 C CNN
+F 3 "~" H 3850 4300 50  0001 C CNN
+	1    3850 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CA9C140
+P 4650 5050
+F 0 "R5" V 4443 5050 50  0000 C CNN
+F 1 "10K" V 4534 5050 50  0000 C CNN
+F 2 "" V 4580 5050 50  0001 C CNN
+F 3 "~" H 4650 5050 50  0001 C CNN
+	1    4650 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5CA9C1D7
+P 2700 5250
+F 0 "#PWR04" H 2700 5000 50  0001 C CNN
+F 1 "GND" H 2705 5077 50  0000 C CNN
+F 2 "" H 2700 5250 50  0001 C CNN
+F 3 "" H 2700 5250 50  0001 C CNN
+	1    2700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5CA9C212
+P 4250 5350
+F 0 "#PWR08" H 4250 5100 50  0001 C CNN
+F 1 "GND" H 4255 5177 50  0000 C CNN
+F 2 "" H 4250 5350 50  0001 C CNN
+F 3 "" H 4250 5350 50  0001 C CNN
+	1    4250 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4900 4250 5300
+Wire Wire Line
+	4000 4300 4250 4300
+Wire Wire Line
+	4250 4300 4250 4600
+Wire Wire Line
+	4650 4900 4650 4800
+Wire Wire Line
+	4250 5300 4650 5300
+Wire Wire Line
+	4650 5300 4650 5200
+Connection ~ 4250 5300
+Wire Wire Line
+	4250 5300 4250 5350
+Wire Wire Line
+	4650 4500 4650 4300
+Wire Wire Line
+	4650 4300 4250 4300
+Connection ~ 4250 4300
+Text Label 5000 4750 1    50   ~ 0
+Vout(ToTivaADC)
+Wire Wire Line
+	4000 2600 4000 2750
+Wire Wire Line
+	5100 4750 5000 4750
+Wire Wire Line
+	5000 4750 5000 4300
+Wire Wire Line
+	5000 4300 4650 4300
+Connection ~ 4650 4300
+Wire Wire Line
+	5100 4850 5000 4850
+Wire Wire Line
+	5000 4850 5000 5300
+Wire Wire Line
+	5000 5300 4650 5300
+Connection ~ 4650 5300
+Wire Wire Line
+	2700 5050 2700 5250
+Wire Wire Line
+	1500 1400 1750 1400
+Wire Wire Line
+	3000 2300 3000 2450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5CAB78ED
+P 4550 2400
+F 0 "#FLG0101" H 4550 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 4550 2574 50  0000 C CNN
+F 2 "" H 4550 2400 50  0001 C CNN
+F 3 "~" H 4550 2400 50  0001 C CNN
+	1    4550 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2400 4550 2600
+Wire Wire Line
+	4550 2600 4300 2600
+Connection ~ 4300 2600
+Wire Wire Line
+	2550 4900 3550 4900
+Wire Wire Line
+	3550 4900 3550 4300
+Wire Wire Line
+	3550 4300 3700 4300
+Wire Wire Line
+	4250 5300 3550 5300
+Wire Wire Line
+	3550 5300 3550 5050
+Wire Wire Line
+	3550 5050 2700 5050
+Connection ~ 2700 5050
+Wire Notes Line
+	6200 3400 6200 5750
+Wire Notes Line
+	1350 3400 6200 3400
+Wire Notes Line
+	1350 5750 6200 5750
+Text Notes 4150 4150 0    50   ~ 0
+Filtro Antialiasing y salida de 5v a 3v3
 $EndSCHEMATC
