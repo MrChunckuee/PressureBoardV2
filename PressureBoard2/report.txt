@@ -1,0 +1,154 @@
+Info: Checking netlist symbol footprint "J1:/5CA927BA:Footprints:BarrelJack_Horizontal".
+
+Info: Checking netlist symbol footprint "R4:/5CA9B431:Footprints:Resistor_Horizontal_RM10mm".
+
+Info: Checking netlist symbol footprint "R3:/5CA92265:Footprints:Resistor_Horizontal_RM10mm".
+
+Info: Checking netlist symbol footprint "R5:/5CA9C140:Footprints:Resistor_Horizontal_RM10mm".
+
+Info: Checking netlist symbol footprint "R2:/5CA9BFB7:Footprints:Resistor_Horizontal_RM10mm".
+
+Info: Checking netlist symbol footprint "RV2:/5C9C8599:Footprints:Potentiometer_Bourns_3296W_Vertical".
+
+Info: Checking netlist symbol footprint "R1:/5C9C8396:Footprints:Resistor_Horizontal_RM10mm".
+
+Info: Checking netlist symbol footprint "J3:/5CAA8B94:Footprints:PinHeader_1x02_P2.54mm_Vertical".
+
+Info: Checking netlist symbol footprint "SW1:/5CA7F2AF:Footprints:TL2230".
+
+Info: Checking netlist symbol footprint "J2:/5C9CE6EF:Footprints:PinHeader_1x02_P2.54mm_Vertical".
+
+Info: Checking netlist symbol footprint "D3:/5CA921F0:Footprints:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop".
+
+Info: Checking netlist symbol footprint "U1:/5C9C80E7:Footprints:ASDXACX030PAAA5".
+
+Info: Checking netlist symbol footprint "C1:/5C9C9D8F:Footprints:C_Disc_D3.0mm_W1.6mm_P2.50mm".
+
+Info: Checking netlist symbol footprint "D1:/5C9C7E77:Footprints:TO-92_Inline".
+
+Info: Checking netlist symbol footprint "C3:/5CA975BC:Footprints:C_Disc_D10.5mm_W5.0mm_P7.50mm".
+
+Info: Checking netlist symbol footprint "C2:/5C9C9E01:Footprints:C_Disc_D3.0mm_W1.6mm_P2.50mm".
+
+Changing footprint "U1:/5C9C80E7" pad "7" net name from "" to "Net-(U1-Pad7)".
+
+Changing footprint "R4:/5CA9B431" pad "2" net name from "" to "Net-(C3-Pad1)".
+
+Changing footprint "U1:/5C9C80E7" pad "6" net name from "" to "Net-(U1-Pad6)".
+
+Adding new symbol "R5:/5CA9C140" footprint "Footprints:Resistor_Horizontal_RM10mm".
+
+Changing footprint "R4:/5CA9B431" pad "1" net name from "" to "Net-(R4-Pad1)".
+
+Changing footprint "R5:/5CA9C140" pad "1" net name from "" to "GND".
+
+Changing footprint "R5:/5CA9C140" pad "2" net name from "" to "Net-(R4-Pad1)".
+
+Changing footprint "U1:/5C9C80E7" pad "8" net name from "" to "Net-(U1-Pad8)".
+
+Changing footprint "U1:/5C9C80E7" pad "5" net name from "" to "Net-(U1-Pad5)".
+
+Adding new symbol "R4:/5CA9B431" footprint "Footprints:Resistor_Horizontal_RM10mm".
+
+Adding new symbol "RV2:/5C9C8599" footprint "Footprints:Potentiometer_Bourns_3296W_Vertical".
+
+Changing footprint "U1:/5C9C80E7" pad "4" net name from "" to "Net-(U1-Pad4)".
+
+Changing footprint "RV2:/5C9C8599" pad "1" net name from "" to "VCC".
+
+Changing footprint "RV2:/5C9C8599" pad "2" net name from "" to "Net-(D1-Pad1)".
+
+Changing footprint "RV2:/5C9C8599" pad "3" net name from "" to "GND".
+
+Adding new symbol "SW1:/5CA7F2AF" footprint "Footprints:TL2230".
+
+Changing footprint "U1:/5C9C80E7" pad "1" net name from "" to "VCC".
+
+Changing footprint "SW1:/5CA7F2AF" pad "4" net name from "" to "Net-(SW1-Pad4)".
+
+Adding new symbol "C1:/5C9C9D8F" footprint "Footprints:C_Disc_D3.0mm_W1.6mm_P2.50mm".
+
+Changing footprint "SW1:/5CA7F2AF" pad "5" net name from "" to "Net-(J1-PadPWR)".
+
+Changing footprint "SW1:/5CA7F2AF" pad "6" net name from "" to "Net-(R3-Pad2)".
+
+Changing footprint "SW1:/5CA7F2AF" pad "3" net name from "" to "Net-(R1-Pad2)".
+
+Changing footprint "U1:/5C9C80E7" pad "3" net name from "" to "GND".
+
+Changing footprint "SW1:/5CA7F2AF" pad "2" net name from "" to "Net-(J1-PadPWR)".
+
+Changing footprint "SW1:/5CA7F2AF" pad "1" net name from "" to "Net-(SW1-Pad1)".
+
+Changing footprint "U1:/5C9C80E7" pad "2" net name from "" to "Net-(R2-Pad2)".
+
+Adding new symbol "U1:/5C9C80E7" footprint "Footprints:ASDXACX030PAAA5".
+
+Changing footprint "R3:/5CA92265" pad "2" net name from "" to "Net-(R3-Pad2)".
+
+Changing footprint "C1:/5C9C9D8F" pad "1" net name from "" to "VCC".
+
+Changing footprint "C1:/5C9C9D8F" pad "2" net name from "" to "GND".
+
+Adding new symbol "C2:/5C9C9E01" footprint "Footprints:C_Disc_D3.0mm_W1.6mm_P2.50mm".
+
+Changing footprint "C2:/5C9C9E01" pad "2" net name from "" to "GND".
+
+Changing footprint "C2:/5C9C9E01" pad "1" net name from "" to "VCC".
+
+Adding new symbol "C3:/5CA975BC" footprint "Footprints:C_Disc_D10.5mm_W5.0mm_P7.50mm".
+
+Changing footprint "C3:/5CA975BC" pad "1" net name from "" to "Net-(C3-Pad1)".
+
+Changing footprint "C3:/5CA975BC" pad "2" net name from "" to "GND".
+
+Adding new symbol "D1:/5C9C7E77" footprint "Footprints:TO-92_Inline".
+
+Changing footprint "D1:/5C9C7E77" pad "2" net name from "" to "GND".
+
+Changing footprint "D1:/5C9C7E77" pad "3" net name from "" to "VCC".
+
+Changing footprint "D1:/5C9C7E77" pad "1" net name from "" to "Net-(D1-Pad1)".
+
+Adding new symbol "D3:/5CA921F0" footprint "Footprints:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop".
+
+Changing footprint "D3:/5CA921F0" pad "1" net name from "" to "GND".
+
+Changing footprint "D3:/5CA921F0" pad "2" net name from "" to "Net-(D3-Pad2)".
+
+Adding new symbol "J2:/5C9CE6EF" footprint "Footprints:PinHeader_1x02_P2.54mm_Vertical".
+
+Changing footprint "R3:/5CA92265" pad "1" net name from "" to "Net-(D3-Pad2)".
+
+Adding new symbol "R3:/5CA92265" footprint "Footprints:Resistor_Horizontal_RM10mm".
+
+Changing footprint "R2:/5CA9BFB7" pad "1" net name from "" to "Net-(C3-Pad1)".
+
+Changing footprint "R2:/5CA9BFB7" pad "2" net name from "" to "Net-(R2-Pad2)".
+
+Adding new symbol "R2:/5CA9BFB7" footprint "Footprints:Resistor_Horizontal_RM10mm".
+
+Changing footprint "R1:/5C9C8396" pad "2" net name from "" to "Net-(R1-Pad2)".
+
+Changing footprint "R1:/5C9C8396" pad "1" net name from "" to "VCC".
+
+Adding new symbol "R1:/5C9C8396" footprint "Footprints:Resistor_Horizontal_RM10mm".
+
+Changing footprint "J3:/5CAA8B94" pad "1" net name from "" to "VCC".
+
+Changing footprint "J3:/5CAA8B94" pad "2" net name from "" to "GND".
+
+Adding new symbol "J3:/5CAA8B94" footprint "Footprints:PinHeader_1x02_P2.54mm_Vertical".
+
+Changing footprint "J2:/5C9CE6EF" pad "2" net name from "" to "GND".
+
+Changing footprint "J2:/5C9CE6EF" pad "1" net name from "" to "Net-(C3-Pad1)".
+
+Adding new symbol "J1:/5CA927BA" footprint "Footprints:BarrelJack_Horizontal".
+
+Error: Component "J1" pad "GND" not found in footprint "Footprints:BarrelJack_Horizontal"
+
+Error: Component "J1" pad "GNDB" not found in footprint "Footprints:BarrelJack_Horizontal"
+
+Error: Component "J1" pad "PWR" not found in footprint "Footprints:BarrelJack_Horizontal"
+

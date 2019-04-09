@@ -429,7 +429,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 2300 3000 2450
 Wire Wire Line
-	2250 4700 3250 4700
+	2250 4700 2750 4700
 Wire Wire Line
 	3250 4700 3250 4100
 Wire Wire Line
@@ -439,7 +439,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 5100 3250 4850
 Wire Wire Line
-	3250 4850 2400 4850
+	3250 4850 2650 4850
 Connection ~ 2400 4850
 Wire Notes Line
 	5900 3200 5900 5550
@@ -542,4 +542,33 @@ Wire Wire Line
 	4350 1300 4600 1300
 Wire Wire Line
 	2550 1300 3000 1300
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5CAC3E58
+P 3000 5200
+F 0 "J4" H 2973 5173 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2973 5082 50  0000 R CNN
+F 2 "Footprints:PinHeader_1x02_P2.54mm_Vertical" H 3000 5200 50  0001 C CNN
+F 3 "~" H 3000 5200 50  0001 C CNN
+	1    3000 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5200 2750 5200
+Wire Wire Line
+	2750 5200 2750 4700
+Connection ~ 2750 4700
+Wire Wire Line
+	2750 4700 3250 4700
+Wire Wire Line
+	2800 5300 2650 5300
+Wire Wire Line
+	2650 5300 2650 4850
+Connection ~ 2650 4850
+Wire Wire Line
+	2650 4850 2400 4850
+Text Notes 2900 5200 0    50   ~ 0
+Vout
+Text Notes 2850 5400 0    50   ~ 0
+GND
 $EndSCHEMATC
