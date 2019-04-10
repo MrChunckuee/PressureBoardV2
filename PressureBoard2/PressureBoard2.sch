@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:PressureBoard2-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -213,7 +213,7 @@ Wire Notes Line
 Wire Wire Line
 	1750 1400 1750 1550
 $Comp
-L e-switch:TL2230OA SW1
+L PressureBoard2-rescue:TL2230OA-e-switch SW1
 U 2 1 5CA7F2AF
 P 2350 1750
 F 0 "SW1" H 2350 2035 50  0000 C CNN
@@ -257,7 +257,7 @@ L Device:R R3
 U 1 1 5CA92265
 P 2800 1850
 F 0 "R3" V 2593 1850 50  0000 C CNN
-F 1 "560" V 2684 1850 50  0000 C CNN
+F 1 "1k" V 2684 1850 50  0000 C CNN
 F 2 "Footprints:Resistor_Horizontal_RM10mm" V 2730 1850 50  0001 C CNN
 F 3 "~" H 2800 1850 50  0001 C CNN
 	1    2800 1850
@@ -274,7 +274,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 1200 2000 1750
 $Comp
-L e-switch:TL2230OA SW1
+L PressureBoard2-rescue:TL2230OA-e-switch SW1
 U 1 1 5CA7F223
 P 2350 1200
 F 0 "SW1" H 2350 1485 50  0000 C CNN
@@ -291,22 +291,6 @@ NoConn ~ 2550 1100
 NoConn ~ 2550 1650
 Text Notes 1750 750  0    50   ~ 0
 Fuente de Poder a partir del jack DC.
-$Comp
-L SparkFun-Connectors:POWER_JACK J1
-U 1 1 5CA927BA
-P 1150 1300
-F 0 "J1" H 1106 1690 45  0000 C CNN
-F 1 "POWER_JACK" H 1106 1606 45  0000 C CNN
-F 2 "Footprints:BarrelJack_Horizontal" H 1150 1550 20  0001 C CNN
-F 3 "" H 1150 1300 50  0001 C CNN
-F 4 " CP-202A-ND " H 1150 1300 50  0001 C CNN "Digikey#"
-F 5 "CUI Inc." H 1150 1300 50  0001 C CNN "Manf"
-F 6 "PJ-202A " H 1150 1300 50  0001 C CNN "Manf#"
-F 7 "490-PJ-202A " H 1150 1300 50  0001 C CNN "Mouser#"
-F 8 "CONN-08197" H 1106 1511 60  0000 C CNN "Field4"
-	1    1150 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1350 1200 2000 1200
 $Comp
@@ -571,4 +555,15 @@ Text Notes 2900 5200 0    50   ~ 0
 Vout
 Text Notes 2850 5400 0    50   ~ 0
 GND
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 5CADB583
+P 1050 1300
+F 0 "J1" H 1107 1617 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1107 1526 50  0000 C CNN
+F 2 "Footprints:BarrelJack_Horizontal" H 1100 1260 50  0001 C CNN
+F 3 "~" H 1100 1260 50  0001 C CNN
+	1    1050 1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

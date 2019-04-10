@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name ASDX)(type Legacy)(uri /home/juan/Downloads/TivaC_Projects/TivaC_PressureMBoard/PressureBoard2/ASDX.lib)(options "")(descr ""))
   (lib (name PressureBoard2-rescue)(type Legacy)(uri ${KIPRJMOD}/PressureBoard2-rescue.lib)(options "")(descr ""))
+  (lib (name PressureBoard2-cache)(type Legacy)(uri ${KIPRJMOD}/PressureBoard2-cache.lib)(options "")(descr ""))
 )
